@@ -1,0 +1,225 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: #333;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full screen height */
+  background-image: url('wallapper.jpg');/* Path to your wallpaper */
+  background-size: cover; /* Make it cover the entire screen */
+  background-repeat: repeat; /* Prevent tiling */
+  background-position: center; /* Center the image */
+}
+
+/* Header Styles */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 25px;
+  background-color: #02127D;
+  color: #FFFFFF;
+  align-items: center;
+  border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+
+.top-header .logo a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #A20C0E;
+  font-weight: bold;
+-webkit-text-stroke: 0.7px #FFFFFF;
+}
+
+.top-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.top-header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.top-header nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Main Content */
+.main-content {
+  background-color: rgba(0, 0, 0, 0.0);;
+  text-align: center;
+  padding: 100px 20px;
+  color: #990C0C;
+}
+
+.main-content h1 {
+  font-size: 48px;
+}
+
+.main-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.scroll-btn {
+  display: inline-block;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #ff9900;
+}
+
+/* Memes Section */
+.memes-section {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.memes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.meme-item {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.meme-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.meme-item p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.meme-item:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.wrapper {
+  min-height: 100%; /* Ensure the wrapper fills the viewport height */
+  display: flex;
+  flex-direction: column; /* Use flexbox to position elements */
+}
+
+.content {
+  flex: 1; /* Push the footer to the bottom by taking up available space */
+}
+.footer {
+  background-color: #000B5B;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Scroll Effect */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Header layout adjustment for mobile */
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 36px;
+  }
+
+  .main-content p {
+    font-size: 18px;
+  }
+
+  .scroll-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .memes-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .meme-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header layout adjustment for very small screens */
+  .top-header .logo a {
+    font-size: 20px;
+  }
+
+  .top-header nav ul {
+    gap: 8px;
+  }
+
+  .top-header nav ul li a {
+    font-size: 14px;
+  }
+
+  .main-content h1 {
+    font-size: 28px;
+  }
+
+  .main-content p {
+    font-size: 16px;
+  }
+
+  .scroll-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .meme-item {
+    width: 100%;
+    max-width: 280px;
+  }
+}
