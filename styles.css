@@ -88,7 +88,20 @@ border-bottom-right-radius: 30px;
 .scroll-btn:hover {
   background-color: #ff9900;
 }
-
+.player-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    /* Vertically center */
+  height: 80vh;          /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.0); /* Optional background color */
+  margin: 0; /* Remove any margin around the container */
+  padding: 0; /* Remove any padding inside the container */
+}
+iframe {
+  display: block; /* Remove default inline-block spacing */
+  margin: 0; /* Remove any default margin from iframe */
+  padding: 0; /* Ensure no padding exists inside iframe */
+}
 /* Memes Section */
 .memes-section {
   padding: 50px 20px;
