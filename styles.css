@@ -92,7 +92,7 @@ border-bottom-right-radius: 30px;
   display: flex;
   justify-content: center; /* Horizontally center */
   align-items: center;    /* Vertically center */
-  height: 60vh;          /* Full height of the viewport */
+  height: 45vh;          /* Full height of the viewport */
   background-color: rgba(0, 0, 0, 0.0); /* Optional background color */
   margin: 0; /* Remove any margin around the container */
   padding: 0; /* Remove any padding inside the container */
